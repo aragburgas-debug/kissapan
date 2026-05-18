@@ -33,11 +33,6 @@ button{font-family:'DM Sans',sans-serif;border:none;cursor:pointer}
 .hero-btns{display:flex;gap:.7rem}
 .btn-primary{background:var(--gold);color:var(--espresso);padding:.85rem 1.6rem;font-size:.8rem;font-weight:500;letter-spacing:.06em;flex:1;text-align:center;display:block}
 .btn-ghost{background:transparent;color:var(--cream);border:1px solid rgba(250,246,240,.25);padding:.85rem 1.2rem;font-size:.8rem;letter-spacing:.06em}
-.marquee-wrap{background:var(--espresso);overflow:hidden;padding:.75rem 0}
-.marquee-track{display:flex;gap:2rem;animation:marquee 18s linear infinite;white-space:nowrap;width:max-content}
-.mi{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-style:italic;color:var(--gold);letter-spacing:.06em;display:flex;align-items:center;gap:1.2rem}
-.md{width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.4;flex-shrink:0}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .sec-head{padding:1.6rem 1.2rem .8rem}
 .sec-eye{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--espresso);line-height:1.2}
@@ -192,7 +187,6 @@ button{font-family:'DM Sans',sans-serif;border:none;cursor:pointer}
       <div class="hero-btns"><button class="btn-primary" onclick="goOrder()">Order a Cake →</button><button class="btn-ghost">See Flavours</button></div>
     </div>
   </div>
-  <div class="marquee-wrap"><div class="marquee-track"><span class="mi">Durian<span class="md"></span></span><span class="mi">Rose Lychee<span class="md"></span></span><span class="mi">Japanese Matcha<span class="md"></span></span><span class="mi">Taro<span class="md"></span></span><span class="mi">Premium Chocolate<span class="md"></span></span><span class="mi">Rum &amp; Raisin<span class="md"></span></span><span class="mi">Handmade in Sydney<span class="md"></span></span><span class="mi">Durian<span class="md"></span></span><span class="mi">Rose Lychee<span class="md"></span></span><span class="mi">Japanese Matcha<span class="md"></span></span><span class="mi">Taro<span class="md"></span></span><span class="mi">Premium Chocolate<span class="md"></span></span><span class="mi">Rum &amp; Raisin<span class="md"></span></span><span class="mi">Handmade in Sydney<span class="md"></span></span></div></div>
   <div class="sec-head"><p class="sec-eye">Our Cakes</p><h2 class="sec-title">Six <em>signature</em> flavours</h2></div>
   <div class="flavour-scroll">
     <div class="fc-card"><img class="fc-img" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=300&q=75" alt="Durian"><div class="fc-body"><div class="fc-name">Durian</div><div class="fc-desc">Bold, complex, unforgettable.</div><div class="fc-price">From $80</div><button class="fc-order" onclick="goOrderFlavour('Durian')">Order →</button></div></div>
